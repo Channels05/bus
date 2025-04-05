@@ -1,0 +1,12 @@
+workflows:
+  default:
+    name: Default Workflow
+    platform: android
+    android:
+      source_dir: .  # Directorio donde está el código (el directorio raíz del proyecto)
+      gradle:
+        flavor: default  # Si usas algún sabor de gradle, ajusta esto
+    flutter:
+      version: stable
+      channel: stable
+    # Puedes agregar pasos personalizados aquí si tienes dependencias específicas
