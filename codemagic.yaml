@@ -2,7 +2,7 @@ workflows:
   default:
     name: Default Workflow
     scripts:
+      - sudo apt-get update
+      - sudo apt-get install -y build-essential python3-dev libgl1-mesa-dev libgles2-mesa-dev zlib1g-dev
       - pip install -r requirements.txt
       - buildozer android debug
-    artifacts:
-      - buildozer.spec
