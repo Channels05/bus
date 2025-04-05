@@ -2,7 +2,7 @@ workflows:
   default:
     name: Default Workflow
     scripts:
-      - pip install kivy==2.1.0 gTTS==2.2.3 pygame==2.1.2 requests==2.28.1
+      - pip install -r requirements.txt
       - buildozer android debug
     artifacts:
       - buildozer.spec
